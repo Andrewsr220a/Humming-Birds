@@ -26,7 +26,7 @@
     <input type="text" class="form-control" placeholder="twitter_handle" aria-label="Username" aria-describedby="basic-addon1">
   </div>
 
-  <a href= "/twitter-analysis/{{twitter_handle}}">Enter Twitter Handle</a>
+  <a href="{{url_for('twitter_sentiments', twitter_handle=handle) }}">{{ handle }}</a>
 
 </body>
 </html>
