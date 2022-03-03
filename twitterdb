@@ -1,0 +1,1 @@
+create table TwitterDB(Tweet_Id BIGINT,Tweets TEXT, Subjectivity INT, Polarity INT);

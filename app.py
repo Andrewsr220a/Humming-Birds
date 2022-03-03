@@ -1,5 +1,6 @@
 # Import dependecies
 from flask import Flask, render_template, redirect, jsonify
+from utils import twitter_sentiments
 import pandas as pd
 from sqlalchemy import create_engine,func
 
@@ -15,7 +16,10 @@ def index():
     spotify_db = pd.read_sql('select genre from spotifydb', engine).to_dict()
     return render_template('index.html',spotify_db=spotify_db['genre'].values())
     
-    
+@app.route("/twitter-analysis/<twitter_handle>/")
+def twitter_sentiments(twitter_handle):   
+    return twitter_sentiments("getAnalysis")
+
 if __name__ == '__main__':
     app.run(debug=True)
     

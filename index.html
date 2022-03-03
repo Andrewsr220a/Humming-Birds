@@ -10,12 +10,23 @@
 </head>
 <body>
 
+<div>
 <select name="cars" id="cars">
     {% for g in spotify_db %}
         <OPTION value='volvo'>{{g }}</option>
     {% endfor %}
-  
 
-</select>
+
+</select> </div>
+
+<div class="input-group mb-3">
+    <div class="input-group-prepend">
+      <span class="input-group-text" id="basic-addon1">@</span>
+    </div>
+    <input type="text" class="form-control" placeholder="twitter_handle" aria-label="Username" aria-describedby="basic-addon1">
+  </div>
+
+  <a href= "/twitter-analysis/{{twitter_handle}}">Enter Twitter Handle</a>
+
 </body>
 </html>
