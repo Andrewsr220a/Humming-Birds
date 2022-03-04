@@ -7,6 +7,7 @@
     "CLIENT_ID": "769c112e927049519f78eb01221bdebf",
     "CLIENT_SECRET": "6728b56477a04d6fac39b11af3016c1b",
     "ACC_SECR": "Ex6sy3cZwhE2kPYUXp7TeJDJQqF5LLb2CijpTs8J6gPVG",
-    "MUSIX_API": "8f10f4a95a8801f6c5f1d14b64e707d9"
+    "MUSIX_API": "8f10f4a95a8801f6c5f1d14b64e707d9",
+    "Postgres": "Dontforget123!"
 
 }
