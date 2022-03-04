@@ -1,0 +1,138 @@
+artist,track,genre,popularity,Sentiment,Sentiment_Score
+Glass Animals,Heat Waves,gauze pop,95,Positive,81.28
+Glass Animals,Heat Waves,indietronica,95,Positive,81.28
+Glass Animals,Heat Waves,shiver pop,95,Positive,81.28
+The Kid LAROI,STAY (with Justin Bieber),australian hip hop,93,Negative,92.17
+Imagine Dragons,Enemy (with JID) - from the series Arcane League of Legends,modern rock,85,Negative,93.25
+Imagine Dragons,Enemy (with JID) - from the series Arcane League of Legends,rock,85,Negative,93.25
+GAYLE,abcdefu,modern alternative pop,100,Neutral,0
+Becky G,MAMIII,dance pop,94,Negative,93.13
+Becky G,MAMIII,latin,94,Negative,93.13
+Becky G,MAMIII,latin pop,94,Negative,93.13
+Becky G,MAMIII,latin viral pop,94,Negative,93.13
+Becky G,MAMIII,pop,94,Negative,93.13
+Becky G,MAMIII,rap latina,94,Negative,93.13
+Becky G,MAMIII,reggaeton,94,Negative,93.13
+Becky G,MAMIII,trap latino,94,Negative,93.13
+Elton John,Cold Heart - PNAU Remix,glam rock,78,Positive,69.08
+Elton John,Cold Heart - PNAU Remix,mellow gold,78,Positive,69.08
+Elton John,Cold Heart - PNAU Remix,piano rock,78,Positive,69.08
+Lil Nas X,INDUSTRY BABY (feat. Jack Harlow),lgbtq+ hip hop,90,Positive,96.27
+Lil Nas X,INDUSTRY BABY (feat. Jack Harlow),pop,90,Positive,96.27
+Adele,Easy On Me,british soul,90,Positive,76.51
+Adele,Easy On Me,pop,90,Positive,76.51
+Adele,Easy On Me,pop soul,90,Positive,76.51
+Adele,Easy On Me,uk pop,90,Positive,76.51
+Rauw Alejandro,Desesperados,puerto rican pop,90,Negative,84.02
+Rauw Alejandro,Desesperados,trap latino,90,Negative,84.02
+Ed Sheeran,Shivers,pop,95,Positive,98.89
+Ed Sheeran,Shivers,uk pop,95,Positive,98.89
+Carolina Gaitán - La Gaita,We Don't Talk About Bruno,,96,Positive,90.58
+Jaymes Young,Infinity,modern rock,96,Positive,84.6
+Jaymes Young,Infinity,pop,96,Positive,84.6
+Justin Bieber,Ghost,canadian pop,93,Positive,64.86
+Justin Bieber,Ghost,pop,93,Positive,64.86
+Lil Nas X,THATS WHAT I WANT,lgbtq+ hip hop,96,Neutral,0
+Lil Nas X,THATS WHAT I WANT,pop,96,Neutral,0
+Dove Cameron,Boyfriend,pop,92,Positive,88.18
+Dove Cameron,Boyfriend,post-teen pop,92,Positive,88.18
+Farruko,Pepas,latin,86,Negative,24.81
+Farruko,Pepas,reggaeton,86,Negative,24.81
+Farruko,Pepas,trap latino,86,Negative,24.81
+Doja Cat,Woman,dance pop,95,Positive,94.98
+Doja Cat,Woman,pop,95,Positive,94.98
+Ed Sheeran,Bad Habits,pop,96,Negative,90.59
+Ed Sheeran,Bad Habits,uk pop,96,Negative,90.59
+Coldplay,My Universe,permanent wave,87,Positive,61.16
+Coldplay,My Universe,pop,87,Positive,61.16
+Lost Frequencies,Where Are You Now,belgian edm,95,Positive,98.35
+Lost Frequencies,Where Are You Now,edm,95,Positive,98.35
+Lost Frequencies,Where Are You Now,pop,95,Positive,98.35
+Lost Frequencies,Where Are You Now,pop dance,95,Positive,98.35
+Lost Frequencies,Where Are You Now,tropical house,95,Positive,98.35
+ACRAZE,Do It To It,,95,Negative,79.06
+The Walters,I Love You So,chicago indie,95,Positive,92.74
+Tainy,Lo Siento BB:/ (with Bad Bunny & Julieta Venegas),latin,94,Negative,81.26
+Tainy,Lo Siento BB:/ (with Bad Bunny & Julieta Venegas),latin hip hop,94,Negative,81.26
+Tainy,Lo Siento BB:/ (with Bad Bunny & Julieta Venegas),latin pop,94,Negative,81.26
+Tainy,Lo Siento BB:/ (with Bad Bunny & Julieta Venegas),pop reggaeton,94,Negative,81.26
+Tainy,Lo Siento BB:/ (with Bad Bunny & Julieta Venegas),reggaeton,94,Negative,81.26
+Tainy,Lo Siento BB:/ (with Bad Bunny & Julieta Venegas),trap latino,94,Negative,81.26
+Olivia Rodrigo,good 4 u,pop,95,Positive,97.74
+Gunna,pushin P (feat. Young Thug),atl hip hop,93,None,0
+Gunna,pushin P (feat. Young Thug),melodic rap,93,None,0
+Gunna,pushin P (feat. Young Thug),rap,93,None,0
+Gunna,pushin P (feat. Young Thug),trap,93,None,0
+Bad Bunny,Yonaguni,latin,94,Positive,92.74
+Bad Bunny,Yonaguni,reggaeton,94,Positive,92.74
+Bad Bunny,Yonaguni,trap latino,94,Positive,92.74
+Tiësto,The Motto,big room,94,Positive,65.37
+Tiësto,The Motto,brostep,94,Positive,65.37
+Tiësto,The Motto,dance pop,94,Positive,65.37
+Tiësto,The Motto,dutch edm,94,Positive,65.37
+Tiësto,The Motto,edm,94,Positive,65.37
+Tiësto,The Motto,house,94,Positive,65.37
+Tiësto,The Motto,pop,94,Positive,65.37
+Tiësto,The Motto,pop dance,94,Positive,65.37
+Tiësto,The Motto,slap house,94,Positive,65.37
+Tiësto,The Motto,trance,94,Positive,65.37
+Tiësto,The Motto,tropical house,94,Positive,65.37
+Elley Duhé,MIDDLE OF THE NIGHT,alt z,92,Positive,77.08
+Elley Duhé,MIDDLE OF THE NIGHT,pop,92,Positive,77.08
+Dr. Dre,Still D.R.E.,g funk,90,Positive,58.46
+Dr. Dre,Still D.R.E.,gangster rap,90,Positive,58.46
+Dr. Dre,Still D.R.E.,hip hop,90,Positive,58.46
+Dr. Dre,Still D.R.E.,rap,90,Positive,58.46
+Dr. Dre,Still D.R.E.,west coast rap,90,Positive,58.46
+The Weeknd,Blinding Lights,canadian contemporary r&b,94,Negative,35.23
+The Weeknd,Blinding Lights,canadian pop,94,Negative,35.23
+The Weeknd,Blinding Lights,pop,94,Negative,35.23
+Eminem,Without Me,detroit hip hop,92,Neutral,0
+Eminem,Without Me,hip hop,92,Neutral,0
+Eminem,Without Me,rap,92,Neutral,0
+The Neighbourhood,Sweater Weather,modern alternative rock,93,Positive,90.18
+The Neighbourhood,Sweater Weather,modern rock,93,Positive,90.18
+The Neighbourhood,Sweater Weather,pop,93,Positive,90.18
+Doja Cat,Need to Know,dance pop,93,Positive,93.59
+Doja Cat,Need to Know,pop,93,Positive,93.59
+zzoilo,Mon Amour - Remix,,93,Negative,73.51
+Charlie Puth,Light Switch,dance pop,78,Positive,98.82
+Charlie Puth,Light Switch,pop,78,Positive,98.82
+Charlie Puth,Light Switch,viral pop,78,Positive,98.82
+Jack Harlow,Nail Tech,deep underground hip hop,86,Positive,94.63
+Jack Harlow,Nail Tech,kentucky hip hop,86,Positive,94.63
+Jack Harlow,Nail Tech,rap,86,Positive,94.63
+Christian Nodal,Ya No Somos Ni Seremos,mariachi,86,Positive,77.83
+Christian Nodal,Ya No Somos Ni Seremos,nuevo regional mexicano,86,Positive,77.83
+Christian Nodal,Ya No Somos Ni Seremos,ranchera,86,Positive,77.83
+Christian Nodal,Ya No Somos Ni Seremos,regional mexican,86,Positive,77.83
+Doja Cat,Kiss Me More (feat. SZA),dance pop,88,Positive,99.29
+Doja Cat,Kiss Me More (feat. SZA),pop,88,Positive,99.29
+The Neighbourhood,Softcore,modern alternative rock,92,Positive,76.73
+The Neighbourhood,Softcore,modern rock,92,Positive,76.73
+The Neighbourhood,Softcore,pop,92,Positive,76.73
+Olivia Rodrigo,traitor,pop,93,Negative,97.69
+BoyWithUke,Toxic,,93,Positive,80.77
+Tate McRae,she's all i wanna be,alt z,91,Negative,97.96
+Tate McRae,she's all i wanna be,dance pop,91,Negative,97.96
+Tate McRae,she's all i wanna be,pop,91,Negative,97.96
+Tate McRae,she's all i wanna be,post-teen pop,91,Negative,97.96
+Ruth B.,Dandelions,alt z,92,Positive,99.49
+Ruth B.,Dandelions,canadian contemporary r&b,92,Positive,99.49
+Ruth B.,Dandelions,canadian pop,92,Positive,99.49
+Ruth B.,Dandelions,pop,92,Positive,99.49
+Eminem,"Lose Yourself - From ""8 Mile"" Soundtrack",detroit hip hop,82,Positive,44.77
+Eminem,"Lose Yourself - From ""8 Mile"" Soundtrack",hip hop,82,Positive,44.77
+Eminem,"Lose Yourself - From ""8 Mile"" Soundtrack",rap,82,Positive,44.77
+Jung Kook,Stay Alive (Prod. SUGA of BTS),,92,Positive,61.99
+Dua Lipa,Levitating (feat. DaBaby),dance pop,89,Positive,97.27
+Dua Lipa,Levitating (feat. DaBaby),pop,89,Positive,97.27
+Dua Lipa,Levitating (feat. DaBaby),uk pop,89,Positive,97.27
+Lil Nas X,MONTERO (Call Me By Your Name),lgbtq+ hip hop,90,Positive,73.06
+Lil Nas X,MONTERO (Call Me By Your Name),pop,90,Positive,73.06
+Jessica Darrow,"Surface Pressure - From ""Encanto""/Soundtrack Version",,75,Positive,93.21
+Sebastian Yatra,Tacones Rojos,colombian pop,80,Positive,45.88
+Sebastian Yatra,Tacones Rojos,latin,80,Positive,45.88
+Sebastian Yatra,Tacones Rojos,reggaeton colombiano,80,Positive,45.88
+Blessd,Medallo,reggaeton,92,Negative,79.06
+Blessd,Medallo,trap latino,92,Negative,79.06
