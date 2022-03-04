@@ -10,14 +10,7 @@
 </head>
 <body>
 
-<div>
-<select name="cars" id="cars">
-    {% for g in spotify_db %}
-        <OPTION value='volvo'>{{g }}</option>
-    {% endfor %}
 
-
-</select> </div>
 
 <div class="input-group mb-3">
     <div class="input-group-prepend">
@@ -26,7 +19,19 @@
     <input type="text" class="form-control" placeholder="twitter_handle" aria-label="Username" aria-describedby="basic-addon1">
   </div>
 
-  <a href="{{url_for('twitter_sentiments', twitter_handle=handle) }}">{{ handle }}</a>
 
+
+  <a href="{{url_for('twitter_sentiments_route', twitter_handle=handle) }}">{{ handle }}</a>
+
+
+<div>
+    <select name="cars" id="cars">
+        {% for g in spotify_db %}
+            <OPTION value='volvo'>{{g }}</option>
+        {% endfor %}
+    
+    
+    </select> </div>
+  
 </body>
 </html>

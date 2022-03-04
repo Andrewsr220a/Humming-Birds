@@ -1,4 +1,5 @@
 #Import the Libraries 
+from cgitb import text
 from textblob import TextBlob, Word, Blobber
 from wordcloud import WordCloud 
 import tweepy
@@ -10,7 +11,7 @@ import json
 from flask import Flask, render_template, redirect, jsonify
 
 
-def twitter_sentiments(twitter_handle):
+def twitter_mood(twitter_handle):
 
     file_path= "/Users/prajesh/Desktop/Class_Activity/Project4/config.json"
     with open(file_path) as fp:
@@ -33,7 +34,7 @@ def twitter_sentiments(twitter_handle):
     api = tweepy.API(auth, wait_on_rate_limit=True)
 
     #Testing Tweet call
-    post = api.user_timeline(screen_name= "twitter_handle", count = 100, lang= "en", tweet_mode = "extended")
+    post = api.user_timeline(screen_name= twitter_handle, count = 100, lang= "en", tweet_mode = "extended")
 
     #Print 10 tweets
     i = 1
@@ -50,18 +51,18 @@ def twitter_sentiments(twitter_handle):
         #removing @mentions
         text = re.sub('@[A-Za-z0-9]+', '', text)
     #Removing the "#" symbol 
-    text = re.sub(r"#", "",text)
+        text = re.sub(r"#", "",text)
     #Removing RT
-    text = re.sub(r"RT[\s]+",'',text)
+        text = re.sub(r"RT[\s]+",'',text)
     #Remove the hyper link
-    text = re.sub(r"https?:\/\/S+",'',text)
-    return text
+        text = re.sub(r"https?:\/\/S+",'',text)
+        return text
 
     #Cleaned tweets down to just text  
     df['Tweets']= df['Tweets'].apply(cleanTxt)
 
     #Show the cleaned text
-    df
+   # df=df.dropna()
 
     #Getting the subjectivity telling how opinionated the tweet is 
     def getSubjectivity(text):
@@ -77,15 +78,15 @@ def twitter_sentiments(twitter_handle):
     df['Polarity'] = df['Tweets'].apply(getPolarity)
 
     #updated dataframe
-    df
+   # 
 
     # Visualizing using the WordCloud
     all_words = " ".join( [twts for twts in df['Tweets']])
-    wordCloud = WordCloud(width = 600, height = 400, random_state = 20, max_font_size = 120 ).generate(all_words)
+    #wordCloud = WordCloud(width = 600, height = 400, random_state = 20, max_font_size = 120 ).generate(all_words)
 
-    plt.imshow(wordCloud, interpolation= "bilinear")
-    plt.axis("off")
-    plt.show()
+    #plt.imshow(wordCloud, interpolation= "bilinear")
+    #plt.axis("off")
+    #plt.show()
 
     # Creating a function that can compute negative, neutral and positive anlysis
     def getAnalysis(score):
@@ -99,7 +100,6 @@ def twitter_sentiments(twitter_handle):
     df['Sentiment']= df['Polarity'].apply(getAnalysis)
 
     #updated dataframe
-    df
 
     #Print positive tweets 
 
@@ -130,6 +130,11 @@ def twitter_sentiments(twitter_handle):
             print(str(j) + ')' + NeutralDF['Tweets'][i])
         print()
         j = j+i
+    return df.T.to_dict()
+
+
+    
+
 
 
 def spotify_analysis(genre):
