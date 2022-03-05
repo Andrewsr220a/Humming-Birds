@@ -8,7 +8,6 @@ import json
 
 
 connection_string = "postgres:Dontforget123!@localhost:5432/twitter_sentiments"
-print("postgresql://" + connection_string)
 engine = create_engine("postgresql://" + connection_string)
 #engine = create_engine(f'postgresql://{connection_string}')
 app = Flask(__name__)
