@@ -15,7 +15,7 @@ app = Flask(__name__)
 
 
 def call_twitter_db(twitter_handle):
-    file_path = "/Users/svanrooi/Desktop/Humming-Birds/config.json"
+    file_path = "/Users/raishandrews/Documents/GitHub/Humming-Birds/config.json"
     with open(file_path) as fp:
         config = json.loads(fp.read())
 
@@ -64,10 +64,8 @@ def call_twitter_db(twitter_handle):
     # Cleaned tweets down to just text
     df['Tweets'] = df['Tweets'].apply(cleanTxt)
 
-    # Show the cleaned text
-   # df=df.dropna()
-
     # Getting the subjectivity telling how opinionated the tweet is
+
     def getSubjectivity(text):
         return TextBlob(text).sentiment.subjectivity
 
@@ -90,16 +88,6 @@ def call_twitter_db(twitter_handle):
 
     df['Sentiment'] = df['Polarity'].apply(getAnalysis)
 
-    #conditions = [
-        #(df["Sentiment"] == "Positive"),
-        #(df["Sentiment"] == "Negative"),
-        #(df["Sentiment"] == "Neutral")
-    #]
-
-    #values = ['0', '1', '2']
-
-   #df["Sentiment_Num"] = np.select(conditions, values)
-
     df.Sentiment.value_counts()
 
     Sentiment = df.Sentiment.value_counts().to_dict()
@@ -111,7 +99,8 @@ def call_twitter_db(twitter_handle):
 
 
 def call_spotify_db():
-    connection_string = "postgres:12345@localhost:5432/twitter_sentiments"
-    engine = create_engine(f'postgresql://{connection_string}')
+    connection_string = "postgres:Dontforget123!@localhost:5432/twitter_sentiments"
+    engine = create_engine("postgresql://" + connection_string)
+    # engine = create_engine(f'postgresql://{connection_string}')
     spotify_df = pd.read_sql('select * from spotifydb', engine)
     return spotify_df

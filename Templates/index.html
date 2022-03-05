@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type=text/css href="{{ url_for('static', filename='style.css')}}">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="login-box">
+        <h2>Twitter Handle</h2>
+        <form action="{{ url_for('twitter_sentiments_route') }}" method="get">
+            <div class="user-box">
+                <label for=""> </label>
+                <input type="text" name="twitter_handle" value="Enter a Twitter Handle">
+            </div>
+            <a href="#">
+                <input type="submit" value="Load Playlist">
+            </a>
+        </form>
+    </div>
+
+</body>
+
+</html>
