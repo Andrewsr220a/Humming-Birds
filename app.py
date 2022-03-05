@@ -1,16 +1,13 @@
 # Import dependecies
-from utils import create_dataframe, print_name, process_sum, process_number_2, call_spotify_db, call_twitter_db
-from flask import Flask, jsonify, render_template
+from utils import call_spotify_db, call_twitter_db
+from flask import Flask, jsonify, render_template, request
 from flask import Flask, render_template, redirect, jsonify
 import pandas as pd
 from sqlalchemy import create_engine, func
 import json
 
-# file_path = "/Users/raishandrews/Documents/GitHub/Humming-Birds/config.json"
-# with open(file_path) as fp:
-#     config = json.loads(fp.read())
 
-connection_string = "postgres:Dontforget123!@localhost:5432/twitter_sentiments"
+connection_string = "postgres:12345@localhost:5432/twitter_sentiments"
 engine = create_engine(f'postgresql://{connection_string}')
 app = Flask(__name__)
 
@@ -19,29 +16,30 @@ app = Flask(__name__)
 def index():
     # teams_table = list(engine.execute("select * from seasons"))
     spotify_dbs = pd.read_sql('select * from spotifydb', engine).to_dict()
-    return render_template('index.html', spotify_dbs=spotify_dbs['genre'].values(), handle="JoeBiden")
+    return render_template('index.html', spotify_dbs=spotify_dbs['genre'].values(), twitter_handle="twitter_handle", data={})
 
 
 @app.route("/twitter-analysis/<twitter_handle>/")
-def sentiment_analysis(twitter_handle):
+def sentiment_analysis():
+    twitter_handle=request.get("twitter-handle")
     return print_name(twitter_handle)
 
 
 @app.route("/humming-bird/")
-def process_some_sum():
-    df = call_twitter_db()
+def twitter_sentiments_route():
+    twitter_handle=request.args.get("twitter_handle")
+    twitter_df = call_twitter_db(twitter_handle)
     spotify_df = call_spotify_db()
 
-    df.Sentiment.value_counts()
+    twitter_df.Sentiment.value_counts()
 
-    Sentiment = df.Sentiment.value_counts().to_dict()
+    Sentiment = twitter_df.Sentiment.value_counts().to_dict()
     Sentiment = max(Sentiment, key=Sentiment.get)
 
     print("Your Tweets look really "+Sentiment+"!")
 
     data = spotify_df[(spotify_df["sentiment"] == Sentiment)].T.to_dict()
-
-    return render_template("humming_bird.html", data=data)
+    return render_template("humming-bird.html", data=data)
 
 
 @app.route('/playlist')
