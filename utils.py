@@ -11,13 +11,11 @@ import json
 from flask import Flask, render_template, redirect, jsonify
 from sqlalchemy import create_engine, func
 
-# connection_string = "postgres:Dontforget123!@localhost:5432/twitter_sentiments"
-# engine = create_engine(f'postgresql://{connection_string}')
-# app = Flask(__name__)
+app = Flask(__name__)
 
 
-def call_twitter_db():
-    file_path = "/Users/raishandrews/Documents/GitHub/Humming-Birds/config.json"
+def call_twitter_db(twitter_handle):
+    file_path = "/Users/svanrooi/Desktop/Humming-Birds/config.json"
     with open(file_path) as fp:
         config = json.loads(fp.read())
 
@@ -92,17 +90,15 @@ def call_twitter_db():
 
     df['Sentiment'] = df['Polarity'].apply(getAnalysis)
 
-    np.random.choice([["Positive", "Negative", "Neutral"], (10, 1)])
+    #conditions = [
+        #(df["Sentiment"] == "Positive"),
+        #(df["Sentiment"] == "Negative"),
+        #(df["Sentiment"] == "Neutral")
+    #]
 
-    conditions = [
-        (df["Sentiment"] == "Positive"),
-        (df["Sentiment"] == "Negative"),
-        (df["Sentiment"] == "Neutral")
-    ]
+    #values = ['0', '1', '2']
 
-    values = ['0', '1', '2']
-
-    df["Sentiment_Num"] = np.select(conditions, values)
+   #df["Sentiment_Num"] = np.select(conditions, values)
 
     df.Sentiment.value_counts()
 
@@ -111,7 +107,11 @@ def call_twitter_db():
 
     print("Your Tweets look really "+Sentiment+"!")
 
+    return df[(df["Sentiment"] == Sentiment)]
+
 
 def call_spotify_db():
-    spotify_df = pd.read_sql('select * from spotifydb', engine).to_dict()
+    connection_string = "postgres:12345@localhost:5432/twitter_sentiments"
+    engine = create_engine(f'postgresql://{connection_string}')
+    spotify_df = pd.read_sql('select * from spotifydb', engine)
     return spotify_df
